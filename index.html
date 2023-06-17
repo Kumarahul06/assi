@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+  <body><style>
+    /* CSS styling */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .search-container {
+      margin-bottom: 20px;
+    }
+
+    .search-container input[type=text] {
+      padding: 10px;
+      width: 400px;
+    }
+
+    .filter-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .filter-container select {
+      padding: 8px;
+      width: 150px;
+    }
+
+    .results-container {
+      background-color: #fff;
+      padding: 20px;
+    }
+
+    .product {
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+
+    .product img {
+      width: 100px;
+      height: 100px;
+      margin-right: 10px;
+    }
+  </style></body>
+  <body>
+    
+
+  <div class="container">
+    <div class="search-bar">
+      <input type="text" class="search-input" placeholder="Enter your search query">
+      <button class="search-button">Search</button>
+    </div>
+
+    <div class="filter-section">
+      <label class="filter-label">Filter by:</label>
+      <!-- Add your filter options here -->
+    </div>
+
+    <div class="sort-section">
+      <label class="sort-label">Sort by:</label>
+      <!-- Add your sort options here -->
+    </div>
+
+    <div class="results-section">
+      <div class="result-item">
+        <div class="result-title">Product 1</div>
+        <div class="result-description">This is the description for Product 1.</div>
+      </div>
+      <div class="result-item">
+        <div class="result-title">Product 2</div>
+        <div class="result-description">This is the description for Product 2.</div>
+      </div>
+      <!-- Add more result items dynamically based on search results -->
+    </div>
+  </div>
+
+
+  <h1>Product Search</h1>
+
+  <div class="search-container">
+    <input type="text" id="search-input" placeholder="Search products...">
+  </div>
+
+  <div class="filter-container">
+    <select id="filter-select">
+      <option value="">All</option>
+      <option value="category1">Category 1</option>
+      <option value="category2">Category 2</option>
+      <option value="category3">Category 3</option>
+    </select>
+
+    <select id="sort-select">
+      <option value="">Sort by</option>
+      <option value="price-low">Price: Low to High</option>
+      <option value="price-high">Price: High to Low</option>
+      <option value="name">Name</option>
+    </select>
+  </div>
+
+  <div class="results-container" id="results-container">
+    <!-- Search results will be dynamically added here -->
+  </div>
+</body>
+</html>
